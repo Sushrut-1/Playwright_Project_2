@@ -1,0 +1,21 @@
+{
+  "name": "playwright_automation_project_i",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cucumber-js",
+    "report": "npx cucumber-js --format json:reports/cucumber-report.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.0.0",
+    "@playwright/test": "^1.60.0",
+    "chai": "^6.2.2",
+    "dotenv": "^17.4.2",
+    "multiple-cucumber-html-reporter": "^4.0.0"
+  }
+}

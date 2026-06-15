@@ -1,0 +1,16 @@
+Login Page Test case
+1. Login with valid details
+2. Login without adding anything
+3. Login with invalid valid mail and invalid password
+
+Valid mail
+#	Email	                Password	Membership
+1	clark@example.com	password	premium
+2	diana@example.com	pass1234	normal
+3	ororo@example.com	pa55w0rd!	premium
+4	miles@example.com	pass-pass	normal
+
+Invalid details
+#	Email	                Password	Membership
+1	clark@example.com	password1	premium
+
