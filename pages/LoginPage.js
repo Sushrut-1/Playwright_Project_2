@@ -7,53 +7,52 @@ class LoginPage {
      */
     constructor(page) {
         this.page = page;
-        
+
         // --- Locators ---
         this.emailInput = page.locator('#email');
         this.passwordInput = page.locator('#password');
-        this.loginButton = page.locator('#login-button'); 
-        this.errorMessage = page.locator('#error-message'); 
-        this.emailValidationError = page.locator('#email-error'); 
-        this.logoutButton = page.locator('#logout-button');
+        this.loginButton = page.locator('#login-button');
+        this.erroremailMessage = page.locator('#email-message');
+        this.erroepasswordMessage = page.locator('#password-message');
+        this.emailValidationError = page.locator('#email-message');
+        this.authErrorMessage = page.locator('#email-message');
+        this.membershipType = page.locator('#rank');
+        this.logoutButton = page.locator('//button[text()="Logout"]');
     }
 
-    // --- Actions (Methods) ---
-
-  //Go to the login page
     async navigateTo(url) {
         await this.page.goto(url);
+        await this.page.waitForLoadState('domcontentloaded');
     }
 
-   //Login with credentials
-    async login(email, password) {
-        if (email !== null && email !== undefined) {
-            await this.emailInput.fill(email);
-        }
-        if (password !== null && password !== undefined) {
-            await this.passwordInput.fill(password);
-        }
-        await this.loginButton.click();
+    async fillEmail(email) {
+        await this.emailInput.fill(email);
     }
 
-    //Click on LoginButton Without filling credentials (for validation testing)
+    async fillPassword(password) {
+        await this.passwordInput.fill(password);
+    }
+
     async clickLogin() {
         await this.loginButton.click();
     }
 
-    // Verify error message text
-    async getErrorMessageText() {
-        return await this.errorMessage.textContent();
+    async login(email, password) {
+        await this.fillEmail(email);
+        await this.fillPassword(password);
     }
 
-    // Verify Input password is masked
+    async waitForLoginSuccess() {
+        await expect(this.logoutButton).toBeVisible({ timeout: 10000 });
+    }
+
     async getPasswordInputType() {
         return await this.passwordInput.getAttribute('type');
     }
 
-    // Logout method
     async logout() {
         await this.logoutButton.click();
     }
 }
 
-module.exports = { LoginPage };
+module.exports = LoginPage;
