@@ -1,0 +1,1615 @@
+[
+  {
+    "description": "  As a user of the hotel booking portal\n  I want to log into the application with various scenarios\n  So that I can verify the login functionality, UI validation, and session management",
+    "elements": [
+      {
+        "description": "",
+        "id": "hotel-planisphere---comprehensive-login-functionality;1.-login-with-valid-details",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "1. Login with valid details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1074138700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user navigates to the login page \"https://hotel-example-site.takeyaqa.dev/en-US/login.html\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1990130999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "the user enters email \"clark@example.com\" and password \"password\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95554299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "clicks on the login button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100438800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the user should be successfully logged in",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58429599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the user should be redirected to My Page",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25921699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the user profile description should display membership type as \"premium\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7749800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 612334600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 10
+          },
+          {
+            "name": "@positive",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "hotel-planisphere---comprehensive-login-functionality;1.-login-with-valid-details",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "1. Login with valid details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1046421899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user navigates to the login page \"https://hotel-example-site.takeyaqa.dev/en-US/login.html\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5679181699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "the user enters email \"diana@example.com\" and password \"pass1234\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88112799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "clicks on the login button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117555399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the user should be successfully logged in",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83665499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the user should be redirected to My Page",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20557899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the user profile description should display membership type as \"normal\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7966200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 405799500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 10
+          },
+          {
+            "name": "@positive",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "hotel-planisphere---comprehensive-login-functionality;1.-login-with-valid-details",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "1. Login with valid details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 997602800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user navigates to the login page \"https://hotel-example-site.takeyaqa.dev/en-US/login.html\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 347495500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "the user enters email \"ororo@example.com\" and password \"pa55w0rd!\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98198200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "clicks on the login button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100439599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the user should be successfully logged in",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34628899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the user should be redirected to My Page",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62314599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the user profile description should display membership type as \"premium\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6080200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1056121600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 10
+          },
+          {
+            "name": "@positive",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "hotel-planisphere---comprehensive-login-functionality;1.-login-with-valid-details",
+        "keyword": "Scenario Outline",
+        "line": 23,
+        "name": "1. Login with valid details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 906381300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user navigates to the login page \"https://hotel-example-site.takeyaqa.dev/en-US/login.html\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 365827600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "the user enters email \"miles@example.com\" and password \"pass-pass\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95354799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "clicks on the login button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90207699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the user should be successfully logged in",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70671800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the user should be redirected to My Page",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21822299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the user profile description should display membership type as \"normal\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5491900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 448009500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 10
+          },
+          {
+            "name": "@positive",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "hotel-planisphere---comprehensive-login-functionality;2.-login-without-adding-anything-(blank-fields)",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "2. Login without adding anything (Blank fields)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1042261399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user navigates to the login page \"https://hotel-example-site.takeyaqa.dev/en-US/login.html\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 443907499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "the user clicks on the login button without entering details",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90953600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "the system should display validation errors for required email and password fields",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25071299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 374351499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negative",
+            "line": 25
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "hotel-planisphere---comprehensive-login-functionality;3.-login-with-invalid-password-for-valid-email",
+        "keyword": "Scenario Outline",
+        "line": 38,
+        "name": "3. Login with invalid password for valid email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 899410299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user navigates to the login page \"https://hotel-example-site.takeyaqa.dev/en-US/login.html\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2203212700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "the user enters email \"clark@example.com\" and password \"password1\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87712400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "clicks on the login button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69036800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "the system should display an authentication error message \"Email or password is invalid.\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12774400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 367037899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negative",
+            "line": 30
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "hotel-planisphere---comprehensive-login-functionality;4.-verify-password-masking-for-security",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "4. Verify password masking for security",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 957209399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user navigates to the login page \"https://hotel-example-site.takeyaqa.dev/en-US/login.html\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 408627700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "the user enters any characters in the password field",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73678899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "the password input attribute \"type\" should be \"password\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17430500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "the characters should be masked on the UI",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10448000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 374930599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui",
+            "line": 40
+          },
+          {
+            "name": "@security",
+            "line": 40
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "hotel-planisphere---comprehensive-login-functionality;5.-verify-email-format-validation",
+        "keyword": "Scenario Outline",
+        "line": 54,
+        "name": "5. Verify email format validation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 964126299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user navigates to the login page \"https://hotel-example-site.takeyaqa.dev/en-US/login.html\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 371345900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 48,
+            "name": "the user enters an invalid email format \"clark.com\" and password \"pass1234\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84979999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "clicks on the login button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72333999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 50,
+            "name": "the system should display an appropriate email format validation error",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8507499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1232447200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negative",
+            "line": 46
+          },
+          {
+            "name": "@validation",
+            "line": 46
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "hotel-planisphere---comprehensive-login-functionality;5.-verify-email-format-validation",
+        "keyword": "Scenario Outline",
+        "line": 55,
+        "name": "5. Verify email format validation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 916984599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user navigates to the login page \"https://hotel-example-site.takeyaqa.dev/en-US/login.html\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30005681299,
+              "error_message": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://hotel-example-site.takeyaqa.dev/en-US/login.html\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.navigateTo (D:\\Playwright_Automation_Project_I\\pages\\LoginPage.js:24:25)\n    at World.<anonymous> (D:\\Playwright_Automation_Project_I\\features\\stepDefinitions\\loginSteps.js:7:26)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 48,
+            "name": "the user enters an invalid email format \"clark@example\" and password \"pass1234\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:58"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "clicks on the login button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 50,
+            "name": "the system should display an appropriate email format validation error",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:62"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1968969400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negative",
+            "line": 46
+          },
+          {
+            "name": "@validation",
+            "line": 46
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "hotel-planisphere---comprehensive-login-functionality;5.-verify-email-format-validation",
+        "keyword": "Scenario Outline",
+        "line": 56,
+        "name": "5. Verify email format validation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 984151300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user navigates to the login page \"https://hotel-example-site.takeyaqa.dev/en-US/login.html\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 502095099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 48,
+            "name": "the user enters an invalid email format \"@example.com\" and password \"pass1234\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83699800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
+            "name": "clicks on the login button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88756000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 50,
+            "name": "the system should display an appropriate email format validation error",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7739499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 562893199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negative",
+            "line": 46
+          },
+          {
+            "name": "@validation",
+            "line": 46
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "hotel-planisphere---comprehensive-login-functionality;6.-verify-login-after-trimming-leading-and-trailing-spaces-in-email",
+        "keyword": "Scenario Outline",
+        "line": 67,
+        "name": "6. Verify login after trimming leading and trailing spaces in email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 928765099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user navigates to the login page \"https://hotel-example-site.takeyaqa.dev/en-US/login.html\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 401468899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 60,
+            "name": "the user enters email with spaces \"clark@example.com\" and password \"password\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 96588900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "clicks on the login button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97758500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 62,
+            "name": "the user should be successfully logged in",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61436200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 63,
+            "name": "the user should be redirected to My Page",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25196100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 426210299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@positive",
+            "line": 58
+          },
+          {
+            "name": "@data-handling",
+            "line": 58
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "hotel-planisphere---comprehensive-login-functionality;6.-verify-login-after-trimming-leading-and-trailing-spaces-in-email",
+        "keyword": "Scenario Outline",
+        "line": 68,
+        "name": "6. Verify login after trimming leading and trailing spaces in email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 930377300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user navigates to the login page \"https://hotel-example-site.takeyaqa.dev/en-US/login.html\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1394094100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 60,
+            "name": "the user enters email with spaces \"diana@example.com\" and password \"pass1234\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84153500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "clicks on the login button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83953600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 62,
+            "name": "the user should be successfully logged in",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70260700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 63,
+            "name": "the user should be redirected to My Page",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21462599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 546525300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@positive",
+            "line": 58
+          },
+          {
+            "name": "@data-handling",
+            "line": 58
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "hotel-planisphere---comprehensive-login-functionality;7.-verify-session-persistence-on-page-refresh",
+        "keyword": "Scenario",
+        "line": 71,
+        "name": "7. Verify session persistence on page refresh",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 928259799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user navigates to the login page \"https://hotel-example-site.takeyaqa.dev/en-US/login.html\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 878720900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 72,
+            "name": "the user enters email \"clark@example.com\" and password \"password\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76391299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 73,
+            "name": "clicks on the login button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 231619999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 74,
+            "name": "the user refreshes the browser page",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 136308599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 75,
+            "name": "the user should still remain logged in on My Page",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52449899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 578420599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@session",
+            "line": 70
+          },
+          {
+            "name": "@positive",
+            "line": 70
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "hotel-planisphere---comprehensive-login-functionality;8.-verify-session-invalidation-after-logout",
+        "keyword": "Scenario",
+        "line": 78,
+        "name": "8. Verify session invalidation after logout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 953366699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user navigates to the login page \"https://hotel-example-site.takeyaqa.dev/en-US/login.html\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 366763500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 79,
+            "name": "the user enters email \"clark@example.com\" and password \"password\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 96707900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 80,
+            "name": "clicks on the login button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99291199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 81,
+            "name": "the user clicks on the logout button",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 391308999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 82,
+            "name": "the user tries to navigate directly to My Page URL \"https://hotel-example-site.takeyaqa.dev/en-US/mypage.html\"",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 234983200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 83,
+            "name": "the user should be restricted and redirected back to the login page",
+            "match": {
+              "location": "features\\stepDefinitions\\loginSteps.js:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 330600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 500388099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@session",
+            "line": 77
+          },
+          {
+            "name": "@security",
+            "line": 77
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "hotel-planisphere---comprehensive-login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Hotel Planisphere - Comprehensive Login Functionality",
+    "tags": [],
+    "uri": "features\\login.feature"
+  },
+  {
+    "description": "  As a guest of the hotel site\n  I want to reserve a special offer room and verify the reservation flow\n  So that the selected details are displayed correctly on confirmation",
+    "elements": [
+      {
+        "description": "",
+        "id": "hotel-planisphere---reservation-with-special-offers;reserve-the-room-for-plan-with-special-offers",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Reserve the room for Plan with special offers",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 954892200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user opens the hotel plans page",
+            "match": {
+              "location": "features\\stepDefinitions\\reserveSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1549404500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the special offers card should be visible",
+            "match": {
+              "location": "features\\stepDefinitions\\reserveSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53699100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "the user selects the special offers plan and navigates to reserve",
+            "match": {
+              "location": "features\\stepDefinitions\\reserveSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 667447599
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "field",
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "stayNights",
+                      "2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "guests",
+                      "4"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "breakfast",
+                      "true"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "earlyCheckIn",
+                      "true"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "sightseeing",
+                      "true"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "name",
+                      "sushrut"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "confirmation",
+                      "By email"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "email",
+                      "sushrut@example.com"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "specialRequest",
+                      "Testing special request"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the user fills the reservation details with:",
+            "match": {
+              "location": "features\\stepDefinitions\\reserveSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 315878299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the total price should update accordingly",
+            "match": {
+              "location": "features\\stepDefinitions\\reserveSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16537000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "the user confirms the reservation",
+            "match": {
+              "location": "features\\stepDefinitions\\reserveSteps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 642146399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "the confirmation reservation page should display the selected details correctly",
+            "match": {
+              "location": "features\\stepDefinitions\\reserveSteps.js:46"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30890400,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"2 night(s)\"\u001b[39m\nReceived string:    \u001b[31m\"HOTEL PLANISPHERE\u001b[39m\n\u001b[31mConfirm Reservation\u001b[39m\n\u001b[31mTotal $470.00 (included taxes)\u001b[39m\n\u001b[31mPlan with special offers·\u001b[39m\n\u001b[31m$70.00 per night. If contains Sun or Sat, plus 25%.·\u001b[39m\n\u001b[31mDates\u001b[39m\n\u001b[31mJune 27, 2026 - June 28, 2026. 1 night(s)\u001b[39m\n\u001b[31mGuests\u001b[39m\n\u001b[31m4 person(s)\u001b[39m\n\u001b[31mAdditional Plans\u001b[39m\n\u001b[31mBreakfast\u001b[39m\n\u001b[31mEarly check-in\u001b[39m\n\u001b[31mSightseeing\u001b[39m\n\u001b[31mName\u001b[39m\n\u001b[31msushrut\u001b[39m\n\u001b[31mConfirmation\u001b[39m\n\u001b[31mEmail: sushrut@example.com\u001b[39m\n\u001b[31mSpecial request\u001b[39m\n\u001b[31mTesting special request\u001b[39m\n\u001b[31mSubmit Reservation\u001b[39m\n\u001b[31mGitHub·\u001b[39m\n\u001b[31m© 2020-2026 Takeshi Kishi\"\u001b[39m\n    at captureRawStack (D:\\Playwright_Automation_Project_I\\node_modules\\playwright-core\\lib\\coreBundle.js:3130:17)\n    at callMatcherAsStep (D:\\Playwright_Automation_Project_I\\node_modules\\playwright\\lib\\matchers\\expect.js:12873:57)\n    at Object.toContain (D:\\Playwright_Automation_Project_I\\node_modules\\playwright\\lib\\matchers\\expect.js:12863:23)\n    at ReservePage.verifyConfirmReservationPageDetails (D:\\Playwright_Automation_Project_I\\pages\\ReservePage.js:134:22)\n    at async World.<anonymous> (D:\\Playwright_Automation_Project_I\\features\\stepDefinitions\\reserveSteps.js:47:3)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "the user submits the reservation",
+            "match": {
+              "location": "features\\stepDefinitions\\reserveSteps.js:58"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "the submit reservation action should be available",
+            "match": {
+              "location": "features\\stepDefinitions\\reserveSteps.js:62"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1313116300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "hotel-planisphere---reservation-with-special-offers",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Hotel Planisphere - Reservation with Special Offers",
+    "tags": [],
+    "uri": "features\\reserve.feature"
+  }
+]

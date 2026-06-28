@@ -1,0 +1,21 @@
+const { chromium } = require('@playwright/test');
+(async () => {
+  const browser = await chromium.launch();
+  const context = await browser.newContext();
+  const page = await context.newPage();
+  await page.goto('https://hotel-example-site.takeyaqa.dev/en-US/plans.html', { waitUntil: 'networkidle' });
+  const plan = page.locator('div.card', { hasText: 'Plan with special offers' }).first();
+  const link = plan.locator('a', { hasText: 'Reserve room' }).first();
+  console.log('link count', await link.count());
+  console.log('href', await link.getAttribute('href'));
+  console.log('outerHTML', await link.evaluate(el => el.outerHTML));
+  const target = await link.evaluate(el => el.target);
+  console.log('target', target);
+  await link.click();
+  await page.waitForTimeout(1000);
+  console.log('url after click', page.url());
+  await page.evaluate(() => { window.location.href = document.querySelector('div.card a[href*="reserve.html"]').getAttribute('href'); });
+  await page.waitForTimeout(1000);
+  console.log('url after js href', page.url());
+  await browser.close();
+})();

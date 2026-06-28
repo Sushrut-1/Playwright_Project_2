@@ -1,0 +1,20 @@
+const { chromium } = require('@playwright/test');
+(async () => {
+  const browser = await chromium.launch();
+  const context = await browser.newContext();
+  const page = await context.newPage();
+  await page.goto('https://hotel-example-site.takeyaqa.dev/en-US/plans.html', { waitUntil: 'networkidle' });
+  const plan = page.locator('div.card', { hasText: 'Plan with special offers' }).first();
+  console.log('plan count', await plan.count());
+  const link = plan.locator('a', { hasText: 'Reserve room' }).first();
+  console.log('link count', await link.count());
+  console.log('href', await link.getAttribute('href'));
+  await link.click();
+  await page.waitForURL(/reserve\.html/);
+  await page.waitForLoadState('networkidle');
+  console.log('navigate url', page.url());
+  console.log('date count', await page.locator('#date').count());
+  console.log('date exists', await page.locator('#date').evaluate(el => !!el).catch(()=>'false'));
+  console.log('body starts', (await page.locator('body').innerText()).slice(0, 800).replace(/\s+/g,' '));
+  await browser.close();
+})();
