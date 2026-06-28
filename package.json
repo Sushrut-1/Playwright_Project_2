@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cucumber-js",
-    "report": "npx cucumber-js --format json:reports/cucumber-report.json"
+    "report:json": "npx cucumber-js --format json:reports/cucumber-report.json",
+    "report:html": "node generate-report.js",
+    "report": "npm run report:json && npm run report:html"
   },
   "keywords": [],
   "author": "",
